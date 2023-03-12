@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Scroll Reaveal</title>
+
+      <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/a489e0e418.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+</head>
+
+<body>
+    <section class="section">
+        <div class="img-box" data-reveal="left">
+            <img src="IMG_5.jpg" alt="" class="img">
+        </div>
+
+        <div class="content-box" >
+            <h2 class="title" data-reveal="left">
+                Scroll Effect
+            </h2>
+            <p class="text" data-reveal="left">The HTML code defines a basic structure for a web page, consisting of a header section with a navigation menu, a main section with two columns of content, and a footer section.
+                The CSS code styles the web page, setting the background color, font, spacing, and layout of various elements. It also includes some animations to reveal content on the page when scrolled into view.
+                The JavaScript code adds functionality to the navigation menu, allowing it to toggle between expanded and collapsed states on smaller screens. It also adds smooth scrolling behavior when navigating to different parts of the page.
+                </p>
+        </div>
+
+
+        <div class="content-box">
+            <h2 class="title" data-reveal="left">
+                HTML
+            </h2>
+            <p class="text" data-reveal="left">This is a simple HTML document that includes a section element with various content and images. The section has a class called "section". Each content or image element has a data-reveal attribute, which will be used in a JavaScript file to create a scroll reveal effect when the elements come into view on the screen.
+                There is also a link to a CSS file and a script tag that references a JavaScript file named "script.js". The CSS file will be used to style the elements on the page, while the script file will contain the code that adds the scroll reveal effect to the page.</p>
+        </div>
+
+        <div class="img-box" data-reveal="right">
+            <img src="IMG_1.jpg" alt="" class="img">
+        </div>
+
+        <div class="img-box" data-reveal="left">
+            <img src="IMG_2.jpg" alt="" class="img">
+        </div>
+
+        <div class="content-box">
+            <h2 class="title" data-reveal="left">
+                CSS
+            </h2>
+            <p class="text" data-reveal="left">The CSS includes two animations for revealing the content from the left and right of the page, which are triggered by adding the class "revealed" to elements with the "data-reveal" attribute set to "left" or "right". Finally, the CSS sets a transform on the image to scale it up and down when the image container is revealed, giving it a zooming effect.</p>
+        </div>
+
+        
+        <div class="content-box">
+            <h2 class="title" data-reveal="left">
+                JavaScript
+            </h2>
+            <p class="text" data-reveal="left">The JS code adds a scroll reveal effect to elements in the HTML DOM by adding and removing a CSS class when they come into and go out of view. It selects all elements with the data-reveal attribute and uses the getBoundingClientRect() method to check if each element is visible on the screen. Finally, the function is set to execute on the scroll and load events of the window object using the addEventListener() method.</p>
+        </div>
+
+        <div class="img-box" data-reveal="right">
+            <img src="IMG_3.jpg" alt="" class="img">
+        </div>
+
+
+        <div class="img-box" data-reveal="left">
+            <img src="IMG_4.jpg" alt="" class="img">
+        </div>
+
+        <div class="content-box">
+            <h2 class="title" data-reveal="right">
+                Node JS
+            </h2>
+            <p class="text" data-reveal="right">NodeJS is used for server-side programming, and primarily deployed for non-blocking, event-driven servers, such as traditional web sites and back-end API services, but was originally designed with real-time, push-based architectures in mind. Every browser has its own version of a JS engine, and node.</p>
+        </div>
+    </section>
+
+
+
+    <script src="script.js"></script>
+
+    <footer class="white-section" id="footer">
+        <div class="container-fluid">
+          <a href="https://github.com/Cyber-Aju" target="_blank"><i class="footer-icon fas fa-code"></i></a>
+          <a href="https://twitter.com/" target="_blank"><i class="footer-icon fab fa-twitter"></i></a>
+          <a href="https://facebook.com/" target="_blank"><i class="footer-icon fab fa-facebook-f"></i></a>
+          <a href="https://instagram.com/" target="_blank"><i class="footer-icon fab fa-instagram"></i></a>
+          <a href="mailto:" target="_blank"><i class="footer-icon fas fa-envelope"></i></a>
+          <p>&copy; Copyright 2023, <a href="#navbar"><i class="fas fa-fire"></i> Scroll Reveal </a>.</p>
+        </div>
+      </footer>
+
+</body>
+</html>
+
