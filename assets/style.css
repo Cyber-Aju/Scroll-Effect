@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(0, 0%, 12%);
+    color: hsl(0, 0%, 100%);
+    font-family: "poppins", sans-serif;
+    overflow-x: hidden;
+}
+
+
+.section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+.img-box {
+    height: 800px;
+    overflow: hidden;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content-box {
+    padding-inline: 10em;
+}
+
+.title {
+    font-size: 5em;
+    max-width: max-content;
+    margin-block-end: 0.25em;
+}
+
+.text {
+    opacity: 0.6;
+    line-height: 2.25;
+}
+
+[data-reveal="left"] {clip-path: inset(0 100% 0 0);}
+
+[data-reveal="left"].revealed {
+    animation: reveal-left 1.2s cubic-bezier(0.17, 0.97, 0.38, 1)
+    forwards 300ms;
+}
+
+@keyframes reveal-left {
+    0% {
+        clip-path: inset(0 100% 0 0);
+    }
+
+    100% {
+        clip-path: inset(0 0 0 0);
+    }
+}
+
+[data-reveal="right"] {clip-path: inset(0 0 0 100%);}
+
+[data-reveal="right"].revealed {
+    animation: reveal-right 1.2s cubic-bezier(0.17, 0.97, 0.38, 1)
+    forwards 300ms;
+}
+
+@keyframes reveal-right {
+    0% {
+        clip-path: inset(0 0 0 100%);
+    }
+
+    100% {
+        clip-path: inset(0 0 0 0);
+    }
+}
+
+.img-box .img {
+    transform: scale(1.5);
+    transition: 1.2s cubic-bezier(0.17, 0.97, 0.38, 1);
+}
+
+.img-box.revealed .img {
+    transform: scale(1);
+}
+
+
+.container-fluid {
+     padding: 8% 17%;
+     align-items: center;
+     text-align: center;
+     text-decoration-color: #8d8d8d;
+ }
+/* Footer Section */
+#footer a {
+    color: #8f8f8f;
+  }
+  
+  #footer a:hover,
+  .footer-icon:hover {
+    color: #8d8d8d;
+    text-decoration: none;
+  }
+  
+  .footer-icon {
+    margin: 1.2rem .6rem;
+    color: #000;
+  }
+
+  
+  
+  
+
+/*This is CSS code for a webpage that has two sections with a grid layout, each consisting of an image and some content.
+The code uses the box-sizing property to include padding and borders in the element's total width and height.
+The background of the body is set to a dark color, and the font is set to "poppins".
+Each section has a class called "section", which sets the display to grid and the grid-template-columns to 1fr 1fr, meaning each section is split into two equal columns. 
+The class "img-box" is used to set the height of the image container and the overflow to hidden. 
+The class "img" sets the width and height of the image to 100% and the object-fit to cover, which will ensure the image fills the container without being distorted.
+The "content-box" class is used to add padding around the content of the section. 
+The "title" class sets the font size and the maximum width to the size of the content, and "text" sets the opacity and line height of the text.
+The CSS also includes two animations for revealing the content from the left and right of the page, which are triggered by adding the class "revealed" to elements with the "data-reveal" attribute set to "left" or "right". 
+Finally, the CSS sets a transform on the image to scale it up and down when the image container is revealed, giving it a zooming effect./*
